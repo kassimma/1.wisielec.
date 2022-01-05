@@ -21,8 +21,8 @@ def find_indexes(word, letter):
 def show_state_of_game():
     print()
     print(user_word)
-    print("POZOSTAŁE próby")
-    print("użyte litery"),used_letters
+    print("POZOSTAŁE próby",no_of_tries)
+    print("użyte litery",used_letters)
 
 ###
 for letter in word :
@@ -50,5 +50,6 @@ while True:
         if "".join(user_word) == word:
             print("Brawo! Odgadłeś słowo!")
             sys.exit(0)
+
 
     show_state_of_game()
